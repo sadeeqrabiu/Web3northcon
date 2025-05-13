@@ -592,6 +592,10 @@ p {
   margin-top: -7px;
 }
 
+.section-title h3{
+  text-align: center;
+}
+
 @media (max-width: 767px) {
   .section-title {
     text-align: center;
@@ -2532,8 +2536,8 @@ p {
 
 .hero-1 .shape-3 {
   position: absolute;
-  top: 30%;
-  left: 29%;
+  top: 27%;
+  left: 45%;
   z-index: 99;
   border-radius: 56px;
   border: 2px solid #000;
@@ -2551,6 +2555,8 @@ p {
   font-size: 24px;
   font-weight: 400;
 }
+
+
 
 @media (max-width: 1199px) {
   .hero-1 .shape-3 {
@@ -2592,6 +2598,17 @@ p {
 .hero-1 .hero-content h1 {
   color: var(--white);
   line-height: 1;
+}
+
+.hero-1 .hero-content h2 {
+  color: var(--white);
+  line-height: 1;
+}
+
+.hero-1 .hero-content h3 {
+  color: var(--white);
+  line-height: 1;
+  padding-top: 20px;
 }
 
 .hero-1 .hero-bottom {
