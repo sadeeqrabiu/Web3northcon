@@ -8079,8 +8079,8 @@ p {
 
 .cta-wrapper .shape-image {
   position: absolute;
-  top: 90px;
-  left: 190px;
+  top: 0px;
+  left: 0px;
 }
 
 @media (max-width: 991px) {
@@ -11965,7 +11965,7 @@ p.sticky-label {
 .footer-section .left-shape {
   position: absolute;
   left: 0;
-  bottom: 100px;
+  bottom: 40px;
 }
 
 @media (max-width: 1199px) {
