@@ -7980,7 +7980,7 @@ p {
 
 .video-section .left-image-1 {
   position: absolute;
-  top: 255px;
+  top: 100px;
   left: 40px;
 }
 
@@ -8016,7 +8016,7 @@ p {
 
 .video-section .right-image {
   position: absolute;
-  top: 290px;
+  top: 100px;
   right: 70px;
 }
 

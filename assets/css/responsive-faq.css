@@ -1,0 +1,130 @@
+/* Mobile responsiveness for FAQ section */
+@media (max-width: 767px) {
+  /* Improve row and column layout */
+  .faq-section .container .faq-wrapper .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .faq-section .container .faq-wrapper .row > [class*="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Responsive text for the main section */
+  .section-title h2.text-white {
+    font-size: 20px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .section-title h2.text-white br {
+    display: none;
+  }
+
+  h3.text-white.text-center {
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+    margin-top: 15px !important;
+  }
+
+  h3.text-white.text-center br {
+    display: none;
+  }
+
+  .text-center .theme-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+  }
+
+  .faq-wrapper .faq-image {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  
+  .faq-wrapper .faq-content .section-title h2 {
+    font-size: 28px;
+  }
+  
+  .faq-wrapper .faq-content .faq-items .accordion-item .accordion-header .accordion-button {
+    font-size: 16px;
+    padding: 15px 15px 0;
+  }
+  
+  .faq-wrapper .faq-content .faq-items .accordion-item .accordion-header .accordion-button.collapsed {
+    padding: 15px 20px;
+  }
+  
+  .faq-wrapper .faq-content .faq-items .accordion-item .accordion-collapse .accordion-body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .faq-wrapper .faq-content .faq-items .accordion-item.style-3 .accordion-header .accordion-button {
+    padding-left: 20px;
+  }
+  
+  .faq-wrapper .faq-content .faq-items .accordion-item.style-3 .accordion-body {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  /* Specific styles for the orange background FAQ in index.html */
+  .faq-section[style*="background-color: #000000"] .faq-wrapper .faq-content .faq-items[style*="background-color: #FF5B00"] .accordion-item {
+    margin-bottom: 10px;
+  }
+
+  .faq-section[style*="background-color: #000000"] .faq-wrapper .faq-content .faq-items[style*="background-color: #FF5B00"] .accordion-item .accordion-header .accordion-button {
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 12px 15px;
+  }
+
+  .faq-section[style*="background-color: #000000"] .faq-wrapper .faq-content .faq-items[style*="background-color: #FF5B00"] .accordion-item .accordion-collapse .accordion-body {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* Smaller screen adjustments */
+  .faq-section .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Extra small device text adjustments */
+  .section-title h2.text-white {
+    font-size: 18px !important;
+    padding: 0 10px;
+  }
+
+  h3.text-white.text-center {
+    font-size: 16px !important;
+    padding: 0 10px;
+  }
+
+  .faq-wrapper .faq-content .section-title h2 {
+    font-size: 24px;
+  }
+  
+  .faq-wrapper .faq-content .faq-items .accordion-item .accordion-header .accordion-button {
+    font-size: 14px;
+    padding: 12px 12px 0;
+  }
+  
+  .faq-wrapper .faq-content .faq-items .accordion-item .accordion-header .accordion-button.collapsed {
+    padding: 12px 15px;
+  }
+
+  /* Specific styles for the orange background FAQ in index.html */
+  .faq-section[style*="background-color: #000000"] .faq-wrapper .faq-content .faq-items[style*="background-color: #FF5B00"] .accordion-item .accordion-header .accordion-button {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .faq-section[style*="background-color: #000000"] .faq-wrapper .faq-content .faq-items[style*="background-color: #FF5B00"] .accordion-item .accordion-collapse .accordion-body {
+    padding: 12px;
+    font-size: 13px;
+  }
+} 

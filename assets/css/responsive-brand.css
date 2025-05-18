@@ -1,0 +1,148 @@
+/* Responsive styles for brand section */
+
+/* Default styles for all screens */
+.brand-section .brand-main-item h3 {
+  margin-bottom: 25px;
+}
+
+.brand-section .brand-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brand-section .brand-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-section .brand-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) {
+  .brand-section .container.custom-container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+  .brand-section .col-lg-6 {
+    margin-bottom: 30px;
+  }
+  
+  .brand-section .col-lg-6:last-child {
+    margin-bottom: 0;
+  }
+  
+  .brand-section .brand-main-item h3 {
+    text-align: center;
+  }
+  
+  .brand-section .brand-item {
+    justify-content: center;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+  .brand-section.section-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .brand-section .container {
+    padding: 0 15px;
+  }
+  
+  .brand-section .brand-main-item {
+    margin-bottom: 30px;
+  }
+  
+  .brand-section .brand-main-item h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Create 2x2 grid layout for mobile */
+  .brand-section .brand-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .brand-section .brand-item .brand-image {
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* Hide the third logo in each row on mobile */
+  .brand-section .brand-item .brand-image:nth-child(3) {
+    display: none;
+  }
+  
+  /* Ensure proper mobile layout with 2x2 grid */
+  .brand-section .brand-item:first-child {
+    margin-bottom: 15px;
+  }
+  
+  .brand-section .brand-item:first-child .brand-image:nth-child(1),
+  .brand-section .brand-item:first-child .brand-image:nth-child(2) {
+    display: flex;
+  }
+  
+  .brand-section .brand-item.mb-0 .brand-image:nth-child(1),
+  .brand-section .brand-item.mb-0 .brand-image:nth-child(2) {
+    display: flex;
+  }
+  
+  /* Ensure the second row of brand items has proper spacing */
+  .brand-section .brand-item.mb-0 {
+    margin-bottom: 0;
+  }
+  
+  /* Make Gold Partners section display properly */
+  .brand-section .col-lg-6:first-child .brand-main-item {
+    margin-bottom: 30px;
+  }
+  
+  /* Make Diamond Partners section display properly */
+  .brand-section .col-lg-6:last-child .brand-main-item {
+    margin-bottom: 0;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .brand-section.section-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .brand-section .brand-main-item h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .brand-section .brand-item {
+    gap: 10px;
+  }
+}
+
+/* Very small devices (small phones, less than 400px) */
+@media (max-width: 399px) {
+  .brand-section .brand-main-item h3 {
+    font-size: 18px;
+  }
+  
+  .brand-section .brand-item {
+    gap: 8px;
+  }
+} 

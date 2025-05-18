@@ -1,0 +1,48 @@
+/* Mobile-specific responsive styles */
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+  /* Brand section mobile layout */
+  .brand-section .brand-item {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px !important;
+  }
+  
+  /* Force exactly 2x2 grid layout by hiding third items */
+  .brand-section .brand-item .brand-image:nth-child(3) {
+    display: none !important;
+  }
+  
+  /* Ensure the first two logos in each row are shown */
+  .brand-section .brand-item .brand-image:nth-child(1),
+  .brand-section .brand-item .brand-image:nth-child(2) {
+    display: flex !important;
+  }
+  
+  /* Adjust spacing between Gold and Diamond partners sections */
+  .brand-section .col-lg-6:first-child {
+    margin-bottom: 30px !important;
+  }
+  
+  /* Make sure images fit properly in their containers */
+  .brand-section .brand-image img {
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .brand-section .brand-item {
+    gap: 10px !important;
+  }
+}
+
+/* Very small devices (small phones, less than 400px) */
+@media (max-width: 399px) {
+  .brand-section .brand-item {
+    gap: 8px !important;
+  }
+} 

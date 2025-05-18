@@ -1,0 +1,131 @@
+/* Responsive text styles */
+
+/* Default styles for all screens */
+.section-title h2.text-white,
+h3.text-white.text-center {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) {
+  .section-title h2.text-white {
+    font-size: 23px !important;
+  }
+  
+  h3.text-white.text-center {
+    font-size: 23px !important;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+  .section-title h2.text-white {
+    font-size: 22px !important;
+    line-height: 1.4 !important;
+  }
+  
+  h3.text-white.text-center {
+    font-size: 20px !important;
+    line-height: 1.4 !important;
+  }
+  
+  /* Start removing line breaks at this breakpoint */
+  .section-title h2.text-white br,
+  h3.text-white.text-center br {
+    display: none;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+  .section-title h2.text-white {
+    font-size: 20px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 20px !important;
+    padding: 0 15px;
+  }
+  
+  h3.text-white.text-center {
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+    margin-top: 15px !important;
+    padding: 0 15px;
+  }
+  
+  .text-center .theme-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+  }
+  
+  /* Brand section responsive styles */
+  .brand-section .container {
+    padding: 0 15px;
+  }
+  
+  .brand-section .brand-main-item h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .brand-section .brand-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .brand-section .brand-item .brand-image {
+    width: 30%;
+    margin: 0;
+  }
+  
+  .brand-section .brand-item .brand-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .section-title h2.text-white {
+    font-size: 18px !important;
+    padding: 0 10px;
+    margin-bottom: 15px !important;
+  }
+  
+  h3.text-white.text-center {
+    font-size: 16px !important;
+    padding: 0 10px;
+    margin-top: 10px !important;
+  }
+  
+  .text-center .theme-btn {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+  
+  /* Brand section responsive styles for extra small devices */
+  .brand-section .brand-item .brand-image {
+    width: 30%;
+  }
+}
+
+/* Very small devices (small phones, less than 400px) */
+@media (max-width: 399px) {
+  .section-title h2.text-white {
+    font-size: 16px !important;
+    padding: 0 5px;
+  }
+  
+  h3.text-white.text-center {
+    font-size: 14px !important;
+    padding: 0 5px;
+  }
+  
+  /* Brand section responsive styles for very small devices */
+  .brand-section .brand-item .brand-image {
+    width: 30%;
+  }
+} 
