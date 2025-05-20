@@ -407,7 +407,10 @@
         }
 
         //>> CountDown Start <<//
-        let targetDate = new Date("2025-08-05 00:00:00").getTime();
+        let targetDate = new Date();
+        targetDate.setDate(targetDate.getDate() + 39);
+        targetDate = targetDate.getTime();
+
         const countdownInterval = setInterval(function () {
             let currentDate = new Date().getTime();
             let remainingTime = targetDate - currentDate;
